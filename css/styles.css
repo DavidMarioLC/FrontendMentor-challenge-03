@@ -1,0 +1,129 @@
+:root{
+    
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%)   ;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1.6rem;
+}
+
+
+
+.hero__content{
+    margin: 4.8rem 0;
+}
+
+.hero__title{
+    font-size:1.4rem;
+    text-align: center;
+    color:var(--Very-Dark-Blue) ;
+}
+
+.hero__title span {
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+}
+
+.hero__subtitle{
+    font-weight: 200;
+    text-align: center;
+    color:var( --Grayish-Blue);
+}
+
+.card{
+   
+    padding: 1.2rem;
+    margin-bottom: 1.6rem;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgb(212, 211, 211);
+    
+}
+
+.features__content > .card:nth-child(1){
+    border-top: 4px solid var( --Cyan);
+}
+
+.cardDouble .card:nth-child(1){
+    border-top: 4px solid var( --Red);
+}
+
+.cardDouble .card:nth-child(2){
+    border-top: 4px solid var( --Orange);
+}
+
+.features__content >.card:last-child{
+    border-top: 4px solid var( --Blue);
+}
+
+.card__title{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:var(--Very-Dark-Blue);
+}
+
+.card__info{
+    margin: 0;
+    margin-top: .4rem;
+    font-size: .8rem;
+    color:var( --Grayish-Blue);
+    margin-bottom: 2.4rem;
+}
+.icon{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.icon__image{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (min-width:700px){
+  .features__content{
+    display: flex;
+    align-items: center;
+    
+  }
+  .features__content .card{
+      margin: 1.6rem;
+      flex:1;
+
+  }
+
+  .cardDouble{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  .cardDouble .card{
+      max-width: 300px;
+  }
+
+  .hero__title{
+      font-size: 2.4rem;
+      max-width: 500px;
+      margin: auto;
+      margin-bottom: 1.6rem;
+
+  }
+  .hero__subtitle{
+      max-width: 500px;
+      margin: auto;
+  }
+}
